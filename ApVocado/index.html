@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AppVocado</title>
+	<meta name="autor" content="Salvador Angel">
+    <meta name="copyrigth" content="Appvocado.org">
+	  <link rel="icon" type="image/gif" href="img/avocado-1-icon.gif">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+	  <script src="scripts.js"></script>
+	  <script src="server.js"></script>
+	  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	  <header>
+	  	<nav>
+	  		    <div id="appvocado">
+	  		<figure class="icon">
+	  	     <a href=""><img src="img/avocado-1-icon.gif" alt="Inicio"></a>
+	  		</figure>
+	  		 <a  id="AppVocado" href=""> AppVocado </a>
+	  		    </div>
+	  		    
+				<form class="buscador">
+	  		 <input id="src" type="text" placeholder="Buscar fecha o noticia">
+	  		 <input id="reset" type="reset" value="X">   	
+	  		 <input id="buscar" type="submit" value="Buscar">
+	  		    </form>
+				
+	  		 <a id="enter" href="enter form.html">Entrar</a>
+	  	</nav>
+	  </header>
+
+
+	  <h1 id="tituloPrecio">Presio Actual del aguacate hoy: </h1>
+
+<div id="Prices">
+  <div id="ButtonContainer">
+    <ul id="ButtonList">
+		<li><button id="btnDiario">1 día</button></li>
+		<li><button id="btnSemanal">1 semana</button></li>
+		<li><button id="btnMensual">1 mes</button></li>
+		<li><button id="btnAnual">1 año</button></li>
+        <li><button id="btnHistorico">Todo</button></li>
+    </ul>
+  </div>
+  <div id="Grafic">
+    <canvas id="grafico"></canvas>
+            </div>
+<div id="precioDiv">
+  <p>Precio actual del aguacate hoy:
+    <span id="ultimoPrecio"></span>
+  </p>
+  <button id="formsell" onclick="window.location.href='Sell Form.html'">Vender</button>
+</div>
+</div>	  
+</body>
+</html>

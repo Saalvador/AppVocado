@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AppVocado</title>
+	<meta name="autor" content="Salvador Angel">
+    <meta name="copyrigth" content="Appvocado.org">
+	  <link rel="icon" type="image/gif" href="img/avocado-1-icon.gif">
+	  <link rel="stylesheet" href="Sell Form style.css">
+      <script src="scripsForRegisterForm.js"></script>
+</head>
+
+	  
+<div class="container">
+  <div class="price">
+       <figure class="icon">
+         <a href="index.html"><img src="img/avocado-1-icon.gif" alt="ir a inicio"></a>
+       </figure>
+     <h1>
+       AppVocado
+     </h1>
+
+     <h2>Formulario de Registro</h2>
+  <form id="registerform">
+    <div class="containerdates" id="container1"> <!-- Contenedor para nombre y apellidos-->
+      <div class="input-row">
+        <label class="input-label" for="nombre">Nombre:</label>
+        <input class="input" type="text" id="nombre" required>
+      </div>
+      <div class="input-row">
+        <label class="input-label" for="apellidos">Apellidos:</label>
+        <input class="input" type="text" id="apellidos" required>
+      </div>
+    </div>
+
+    <div class="containernewuserform" id="container2">
+      <label for="fechaNacimiento" class="input-label">Fecha de Nacimiento:</label>
+      <input class="input" type="date" id="fechaNacimiento" required>
+    </div>
+    
+    <div class="containernewuserform" id="container3">
+      <label for="localidad" class="input-label">Localidad:</label>
+      <input class="input" type="text" id="localidad" required>
+    </div>
+    <!-- Agrega aquí los demás contenedores para los campos restantes -->
+
+    <button class="button" type="button" onclick="mostrarSiguiente()">Siguiente</button>
+    <button class="button" type="submit" id="enviarFormulario" style="display: none;">Enviar</button>
+  </form>
+</div>
